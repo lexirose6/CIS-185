@@ -1,0 +1,38 @@
+html {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(182, 200, 205);
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px rgb(169, 191, 197);
+}
+h2 {
+    font-size: 26px;
+}
+li,p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+ul.green {
+    color: rgb(2, 106, 58)
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 2px solid rgb(87, 111, 118);
+  background-color: rgb(208, 224, 229);
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#small {
+    font-size: 16px;
+    color:rgb(49, 49, 49)
+}
