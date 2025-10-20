@@ -1,0 +1,231 @@
+/*All the main ingrediants*/
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #D72638;
+    --secondary-color: #5FAD56;
+    --main-color: #FFFCF9;
+    --text-color: #555358;
+    --spacing: 2rem;
+    --border-radius: 2rem;
+    --textbox-color: #f5f4f4;
+}
+html { 
+    background-color: #FFFCF9;
+    font-family: "DM Mono", monospace;
+    font-size: 1em;
+}
+
+/* Navigation Bar */
+nav {
+    display: block;
+    justify-content: space-between;
+    align-items:flex-start;
+    border-style: outset;
+    border-width: 0.3rem;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 1rem;
+    flex-flow: row wrap;
+   
+}
+.item {
+    display: inline-block;
+    border-style: inset; 
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-width: 0.3rem;
+    background-color: var(--main-color);
+    border-color: var(--primary-color);
+}
+#name {
+    display: inline-block;
+    border-style: none;
+    text-align: left;
+    padding-left: 1rem;
+    color: var(--main-color);
+    font-weight:500;
+    
+}
+
+/* Body */
+/* Outer grid */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "main img-bio"
+        "project-header project-header"
+        "project1-img project1-desc"
+        "project2-img project2-desc"
+        "project3-img project3-desc"
+        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25rem 8rem 15rem 15rem 15rem 5rem;
+    background-color: var(--main-color);
+    gap: var(--spacing);
+    padding: var(--spacing);
+    
+}
+/*Parent*/
+.grid-container > div {
+    
+    padding: 2rem;
+    border-style:inset;
+    border-color: var(--textbox-color);
+    background-color: var(--textbox-color);
+}
+/*Children*/
+.grid-container > div.main {
+    grid-area: main;
+    padding: 1rem;
+}
+.grid-container > div.img-bio {
+    grid-area: img-bio;
+    padding: 0;
+    background-color: var(--main-color);
+    border-style: none;
+}
+.grid-container > div.project-header {
+    grid-area: project-header;
+    border-style: outset;
+    border-color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-width: 0.3rem;
+    text-align: center;
+    padding: 1.6vw;
+}
+.grid-container > div.project1-img {
+    grid-area: project1-img;
+    border-style: none;
+    padding:0;
+}
+.grid-container > div.project1 {
+    grid-area: project1-desc;
+    padding:1.6vw;
+}
+.grid-container > div.project2-img {
+    grid-area: project2-img;
+    border-style: none;
+    padding:0;
+}
+.grid-container > div.project2 {
+    grid-area: project2-desc;
+    padding:1.6vw;
+}
+.grid-container > div.project3-img {
+    grid-area: project3-img;
+    border-style: none;
+    padding: 0;
+}
+.grid-container > div.project3 {
+    grid-area: project3-desc;
+    padding:1.6vw;
+}
+
+/* Inner Grid */
+.inner-flex {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    border-radius: 0.2rem;
+}
+.inner-flex > div {
+    background-color: var(--main-color);
+    flex:1;
+    border-radius: 0.7rem;
+    border-style: solid;
+    border-color: var(--text-color);
+    padding: 1rem;
+}
+
+/* Footer */
+.grid-container > div.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    border-style:outset;
+    border-color:var(--primary-color);
+    border-width:0.3rem;
+    background-color: var(--primary-color);
+    color:var(--main-color);
+}
+
+.button {
+    display:block;
+    margin-top:3.2vh;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-width: 0.3rem;
+    font-family: "DM MONO";
+    font-weight: 500;
+    color: var(--main-color);
+    height: 7vh;
+    text-align: center;
+}
+
+/*Media screen mobile*/
+@media screen and (max-width: 767px) {
+    .grid-container {
+       display: grid;
+    grid-template-areas: 
+        "img-bio"
+        "main"
+        "project-header"
+        "project1-desc"
+        "project2-desc"
+        "project3-desc"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh 22vh 8vh 24vh 24vh 24vh 8vh;
+    
+    }
+    .item {
+        display:block;
+    }
+    .grid-container > div.project1-img {
+        display: none;
+    }
+    .grid-container > div.project2-img {
+        display: none;
+    }
+    .grid-container > div.project3-img {
+        display: none;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+}
+
+/*Elements and other classes*/
+p {
+    padding:1rem, 0;
+    margin: 0;
+    font-size: clamp(0.7rem, 1.5vw, 1.3rem);
+}
+h1{
+    margin:0;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+h2{
+    font-size: clamp(1rem, 1.6vw, 1.5rem);
+}
+.center {
+    text-align: center;
+}
+img {
+    display:block;
+    margin:0 auto;
+    height: auto;
+    max-width: 100%;
+}
+#roundimg{
+    border-radius: 0.7rem;
+    border-width: 0.3rem;
+    max-height: 30vh;
+    width:auto;
+}
