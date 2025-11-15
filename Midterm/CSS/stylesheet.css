@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    --red: #cf1010;
+    --green: #026541; 
+    --text-color: #fffdfb;
+    --secondary-color: #1B4965;
+    --grey: #636363;
+    font-size: 1rem;
+
+}
+div {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+h1{
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+img{
+    max-height: min-content;
+    width:100%;
+}
+textarea{
+    height: 10rem;
+    width: 100%;
+}
+button{
+    background-color: var(--secondary-color);
+    border-color: var(--text-color);
+    border-width: .1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    color: var(--text-color);
+    padding: .2rem .6rem;
+}
+form{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+div.sidebar{
+    background-color: var(--secondary-color);
+    padding:1rem;
+}
+a.grey{
+    color:var(--grey);
+}
+.short{
+    height: 100vh;
+}
+.menu-item-bold{
+    font-weight: 600;
+}
+.green-text{
+    color:var(--green);
+}
+.brand{
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.background-primary{
+    background-color: var(--secondary-color);
+    border-bottom-style:solid;
+    border-color: var(--text-color);
+}
+.displayed-items{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: aliceblue;
+}
+.sb-link-main{
+    display: block;
+    padding: .25rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:var(--text-color)
+}
+.sb-link{
+    display: block;
+    padding: .25rem 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color:var(--text-color)
+}
+.collapse{
+    display: block;
+}
+@media (max-width: 767px) {
+    .collapse.show{
+        display: none;
+    }
+}
+.red{
+    background-color: var(--red);
+    color: var(--text-color)
+}
+.green{
+    background-color: var(--green);
+    color: var(--text-color)
+}
+#space{
+    padding-top: 1rem;
+}
