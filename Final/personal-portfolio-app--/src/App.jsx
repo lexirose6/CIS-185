@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./NavBar.jsx"
 import Home from "./pages/Home.jsx"
@@ -7,11 +6,9 @@ import Project2 from "./pages/Project 2.jsx"
 import Project3 from "./pages/Project 3.jsx"
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
-import {Link} from 'react-router-dom';
+import '../src/assets/fonts/Arimo/static/Arimo-Regular.ttf'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <NavBar />
