@@ -2,14 +2,14 @@ import { useState } from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Projects() {
+const Project2 = () => {
     return (
         <>
             <Container>
-                <h1>test</h1>
+                <h1>2</h1>
             </Container>
         </>
     )
 }
 
-export default Projects
+export default Project2

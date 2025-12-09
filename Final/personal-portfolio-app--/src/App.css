@@ -1,11 +1,25 @@
 #root {
-  max-width: max-content;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
-  text-align: center;
   box-sizing: border-box;
+  width: 100%;
+}
+html, body, #root {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+html, body {
+  width: 100%;
 }
 
+.icon-align {
+  float: left;
+  margin-right: 1rem;
+}
+.text-container {
+  overflow: hidden;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
